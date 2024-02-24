@@ -10,6 +10,7 @@ export default function ExplanationSection({ title, description }) {
       <menu>
         {description.map((item) => (
           <button
+            key={item?.block}
             onClick={() => {
               setCurrentBlock(item?.block);
             }}
