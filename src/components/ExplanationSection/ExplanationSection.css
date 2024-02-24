@@ -1,0 +1,32 @@
+.description-section {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.explanation-section {
+  background-color: #b7c9f2;
+  margin-top: 25px;
+}
+
+.explanation-title {
+  padding: 10px;
+  color: white;
+  margin: 0;
+  background-color: #265073;
+}
+
+menu {
+  margin: 0;
+  background-color: #201658;
+  display: flex;
+  gap: 50px;
+}
+
+.tab {
+  background-color: none;
+  background-color: #201658;
+  color: #f6fdc3;
+  margin: 0;
+}
