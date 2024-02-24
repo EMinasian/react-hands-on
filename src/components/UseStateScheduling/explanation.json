@@ -1,0 +1,25 @@
+{
+  "title": "A common confusion in React useState",
+  "description": [
+    {
+      "block": 0,
+      "heading": "Introduction",
+      "text": "Probably the most common confusion among React beginners is the functionality of the setters of useState. I remember me and my team mate made this mistake once, as well, and it took a relatively long time to understand the root cause."
+    },
+    {
+      "block": 1,
+      "heading": "Problem explanation",
+      "text": "In the code section I implemented a basic button element which upon click changes the value to be displayed using a setter from useState and then it logs the value. When I click on the button, although the value correctly changes in the UI, the logged value is still the old one."
+    },
+    {
+      "block": 2,
+      "heading": "Clarification",
+      "text": "React is a super intelligent library which is ‘supposed to understand’ how to render the content in order to stick to an optimized plan. At the same time, userState is a React hook to provide more control over the state variables in the React functional components. What useState does, is to update the state variable and then React reschedules a rerender to display the new content. This procedure is ‘supposed to’ be carried out in an asynchronous (don’t use await, I did it once!) fashion. Meaning that, React does not really immediately assign the value (as contracted to the = operator), but “schedules an update”. As a result, while React was intelligent enough to render the UI after the button is clicked, and you saw the new value, your expectation for the value to get immediately assigned and logged was not really justified."
+    },
+    {
+      "block": 3,
+      "heading": "Solution",
+      "text": "If any operation depends on the value being immediately changed, other approaches such as using a useEffect hook, or even some prior assignment of the value might be considered."
+    }
+  ]
+}
