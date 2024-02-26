@@ -1,4 +1,4 @@
-import UseStateScheduling from "./components/UseStateScheduling";
+import StateBasedOnPrevState from "./components/StateBasedOnPrevState";
 
 import "./Globals.css";
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div>
-      <UseStateScheduling />
+      <StateBasedOnPrevState />
     </div>
   );
 }

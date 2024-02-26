@@ -1,0 +1,20 @@
+{
+  "title": "State Update Based on the Previous State Value",
+  "description": [
+    {
+      "block": 0,
+      "heading": "Problem explanation",
+      "text": "We have two functions to increase the state value, both of which utilize setters (called twice) coming from useState; however, in one of the functions, two setters immediately set the new state value based on the previous value, and in the other function setters rely on an arrow function. You might expect that both result in the same increase of the count (2); however, as you can see in the first approach the increase is only by one."
+    },
+    {
+      "block": 1,
+      "heading": "Clarification",
+      "text": "[Again] It is very important to note that React indeed schedules the state update when we use useState. Meaning that, when we trigger the incorrect function, at the moment of scheduling, the state value based on which a new value is to be calculated is the same. As a result we do not see an increase by two (In simple words, when count is 0, and we trigger the incorrect function, both state setters set the count to be 0 + 1)."
+    },
+    {
+      "block": 2,
+      "heading": "Solution",
+      "text": "Instead of directly updating the state value based on the previous value, the best practice is to pass to the setter a function which will be called by React automatically with the current state value. This function should return the new value we want to set to the state variable. With this approach, when the second setter is called, the function passed to it will also get the latest value of the state at the time when it is executed (based on how React scheduled)."
+    }
+  ]
+}
