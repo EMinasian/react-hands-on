@@ -1,7 +1,8 @@
 import { useState } from "react";
 import explanation from "./explanation.json";
 import "../../Globals.css";
-import ExplanationSection from "../../components/ExplanationSection/ExplanationSection";
+import DisplaySection from "../../components/DisplaySection";
+import ExplanationSection from "../../components/ExplanationSection";
 
 export default function StateBasedOnPrevState() {
   const [count, setCount] = useState(0);
@@ -20,8 +21,7 @@ export default function StateBasedOnPrevState() {
 
   return (
     <>
-      <div className="display-section">
-        <h2>Scheduling in useEffect</h2>
+      <DisplaySection heading="Scheduling in useEffect">
         <p className="result-text">The count: {count}</p>
         <button className="neg-button" onClick={incorrectHandleSet}>
           Incorrect increase by two
@@ -29,10 +29,9 @@ export default function StateBasedOnPrevState() {
         <button className="pos-button" onClick={correctHandleSet}>
           Correct increase by two
         </button>
-      </div>
+      </DisplaySection>
       <ExplanationSection
-        title={explanation?.title}
-        description={explanation?.description}
+        explanation={explanation}
       />
     </>
   );

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./ExplanationSection.css";
 
-export default function ExplanationSection({ title, description }) {
+export default function ExplanationSection({ explanation }) {
+  const { title, description } = explanation;
   const [currentBlock, setCurrentBlock] = useState(0);
 
   return (

@@ -1,14 +1,3 @@
-.display-section {
-  background-color: #B7C9F2;
-  width: 40%;
-  padding: 20px;
-  border-radius: 15px;
-  border: 2px solid #265073;
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-}
-
 .result-text {
   font-weight: 600;
 }
@@ -25,11 +14,11 @@ button {
 }
 
 .neg-button {
-  background-color: #FF004D;
+  background-color: #ff004d;
 }
 
 .pos-button {
-  background-color: #416D19;
+  background-color: #416d19;
 }
 
 body {

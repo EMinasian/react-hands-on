@@ -8,5 +8,10 @@
         "id": "1",
         "title": "Component state value update based on the current state value",
         "linkTo": "/state-update"
+    },
+    {
+        "id": "2",
+        "title": "Styling with Vanilla CSS not scoping to a module",
+        "linkTo": "/vanilla-css-not-scoping"
     }
 ]
