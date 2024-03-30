@@ -11,7 +11,7 @@ export default function VanillaCSSNotScoping() {
         <Component1 />
         <Component2 />
       </DisplaySection>
-      {/* <ExplanationSection explanation={explanation} /> */}
+      <ExplanationSection explanation={explanation} />
     </>
   );
 }

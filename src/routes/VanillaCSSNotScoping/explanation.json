@@ -4,17 +4,17 @@
     {
       "block": 0,
       "heading": "Problem explanation",
-      "text": ""
+      "text": "In React, When CSS is imported in one of the components, which is even not the root or a parent, as well as the component wherein it is imported, it is also applied to other components. You can see that although the CSS is only imported in Component 1, it is applied to Component 2, its sibling, and the color of the text in Component 2 changed to red."
     },
     {
       "block": 1,
       "heading": "Clarification",
-      "text": ""
+      "text": "React generally imports the CSS via a script in the DOM. As a result, the other components which contribute to the DOM with their elements, are affected by the CSS file as well. In other words, how we manage the components in the application, is simply meaningful in the envelopment layer. Later, when React actually converts the code into DOM elements to render the UI, the module breakdown in the development layer might not be present. As a result, the CSS module which is imported, and placed on the DOM, will have its influence on all the elements that come from various components."
     },
     {
       "block": 2,
       "heading": "Solution",
-      "text": ""
+      "text": "To solve this issue, UI libraries can be specifically helpful which apply CSS in module level (e.g. Tailwind), or if the developer still prefers a CSS import solution, the name of the classes should be carefully chosen not to overlap across components wherever a module specific CSS is intended."
     }
   ]
 }
