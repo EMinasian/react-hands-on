@@ -13,5 +13,10 @@
         "id": "2",
         "title": "Styling with Vanilla CSS not scoping to a module",
         "linkTo": "/vanilla-css-not-scoping"
+    },
+    {
+        "id": "3",
+        "title": "Styling Solutions in React",
+        "linkTo": "/styling-solutions"
     }
 ]
