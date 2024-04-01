@@ -6,6 +6,7 @@ import UseStateScheduling from "./routes/UseStateScheduling";
 import StateBasedOnPrevState from "./routes/StateBasedOnPrevState";
 import VanillaCSSNotScoping from "./routes/VanillaCSSNotScoping";
 import StylingSolutions from "./routes/StylingSolutions";
+import StyledComponents from "./routes/StyledComponents";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
   { path: "/state-update", element: <StateBasedOnPrevState /> },
   { path: "/vanilla-css-not-scoping", element: <VanillaCSSNotScoping /> },
   { path: "/styling-solutions", element: <StylingSolutions /> },
+  { path: "/styled-components", element: <StyledComponents /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
