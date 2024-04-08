@@ -5,7 +5,7 @@ export default function StartPage() {
   return (
     <div>
       {data.map((item) => (
-        <ListItem item={item} />
+        <ListItem item={item} key={item?.id}/>
       ))}
     </div>
   );
