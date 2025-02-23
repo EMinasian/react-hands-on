@@ -8,6 +8,7 @@ import VanillaCSSNotScoping from "./routes/VanillaCSSNotScoping";
 import StylingSolutions from "./routes/StylingSolutions";
 import StyledComponents from "./routes/StyledComponents";
 import UseStateVsUseRef from "./routes/UseRefVsUseState/UseStateVsUseRef";
+import UseStateInitialRender from "./routes/UseStateInitialRender/UseStateInitialRender";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   { path: "/styling-solutions", element: <StylingSolutions /> },
   { path: "/styled-components", element: <StyledComponents /> },
   { path: "/usestate-vs-useref", element: <UseStateVsUseRef /> },
+  { path: "/usestate-initial-render", element: <UseStateInitialRender /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -28,5 +28,10 @@
         "id": "5",
         "title": "Hooks: useState vs. useRef",
         "linkTo": "/usestate-vs-useref"
+    },
+    {
+        "id": "6",
+        "title": "UseState in Page Renders (Initial)",
+        "linkTo": "/usestate-initial-render"
     }
 ]

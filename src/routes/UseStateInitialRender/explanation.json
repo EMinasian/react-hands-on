@@ -1,0 +1,10 @@
+{
+  "title": "State Update Based on the Previous State Value",
+  "description": [
+    {
+      "block": 0,
+      "heading": "Problem explanation",
+      "text": "In the initialization of the state, if a function is responsible generate the initial state, only a reference should be passed to useState. If in useState the function is indeed invoked, it will be invoked on every render of the component. Instead, if only a reference is passed, React will understand not to invoke everytime. This will help to the performance."
+    }
+  ]
+}
