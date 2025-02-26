@@ -7,8 +7,9 @@ import StateBasedOnPrevState from "./routes/StateBasedOnPrevState";
 import VanillaCSSNotScoping from "./routes/VanillaCSSNotScoping";
 import StylingSolutions from "./routes/StylingSolutions";
 import StyledComponents from "./routes/StyledComponents";
-import UseStateVsUseRef from "./routes/UseRefVsUseState/UseStateVsUseRef";
-import UseStateInitialRender from "./routes/UseStateInitialRender/UseStateInitialRender";
+import UseStateVsUseRef from "./routes/UseRefVsUseState";
+import UseStateInitialRender from "./routes/UseStateInitialRender";
+import CustomHooks from "./routes/CustomHooks";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   { path: "/styled-components", element: <StyledComponents /> },
   { path: "/usestate-vs-useref", element: <UseStateVsUseRef /> },
   { path: "/usestate-initial-render", element: <UseStateInitialRender /> },
+  { path: "/custom-hooks", element: <CustomHooks /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,1 +1,3 @@
-export * from './UseStateInitialRender'
+import UseStateInitialRender from './UseStateInitialRender'
+
+export default UseStateInitialRender

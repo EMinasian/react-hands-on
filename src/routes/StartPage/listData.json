@@ -31,7 +31,12 @@
     },
     {
         "id": "6",
-        "title": "UseState in Page Renders (Initial)",
+        "title": "UseState in page renders (initial)",
         "linkTo": "/usestate-initial-render"
+    },
+    {
+        "id": "7",
+        "title": "Custom hooks",
+        "linkTo": "/custom-hooks"
     }
 ]
