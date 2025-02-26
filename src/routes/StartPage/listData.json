@@ -38,5 +38,10 @@
         "id": "7",
         "title": "Custom hooks",
         "linkTo": "/custom-hooks"
+    },
+    {
+        "id": "8",
+        "title": "Hook: useTransition",
+        "linkTo": "/hook-use-transition"
     }
 ]
