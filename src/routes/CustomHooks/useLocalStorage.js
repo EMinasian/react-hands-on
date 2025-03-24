@@ -1,8 +1,20 @@
 import { useState } from "react";
 
-export default function useLocalStorage(initialValue) {
+const setInitial = () => {
+  const count = localStorage.getItem('count')
+  return Number(count) ?? 0
+}
 
-  const [value, setValue] = useState(initialValue)
+export default function useCount(initialValue) {
 
-  return [value, setValue]
+  const [value, setValue] = useState(setInitial)
+
+  const increment = () => { setValue(prev => prev + 1) } 
+  const decrement = () => { setValue(prev => prev - 1) } 
+
+  return {
+    count: value,
+    increment,
+    decrement
+  }
 }

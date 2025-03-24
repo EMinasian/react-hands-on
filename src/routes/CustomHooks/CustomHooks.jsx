@@ -1,14 +1,14 @@
-import { useState } from "react";
+import useCount from "./useLocalStorage";
 
 export default function CustomHooks() {
 
-  const [name, setName] = useState()
+  const {count, increment, decrement} = useCount()
 
   return (
-    <input
-      type="text"
-      value={name}
-      onChange={(e) => { setName(e.target.value) }}
-    />
+    <>
+      <span>{`count: ${count}`}</span>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </>
   )
 }
