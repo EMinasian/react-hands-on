@@ -11,6 +11,7 @@ import UseStateVsUseRef from "./routes/UseRefVsUseState";
 import UseStateInitialRender from "./routes/UseStateInitialRender";
 import CustomHooks from "./routes/CustomHooks";
 import HookUseTransition from "./routes/HookUseTransition";
+import CompoundComponents from "./routes/CompoundComponents";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
   { path: "/usestate-initial-render", element: <UseStateInitialRender /> },
   { path: "/custom-hooks", element: <CustomHooks /> },
   { path: "/hook-use-transition", element: <HookUseTransition /> },
+  { path: "/compound-components", element: <CompoundComponents /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

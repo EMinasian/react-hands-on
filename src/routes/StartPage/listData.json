@@ -43,5 +43,10 @@
         "id": "8",
         "title": "Hook: useTransition",
         "linkTo": "/hook-use-transition"
+    },
+    {
+        "id": "9",
+        "title": "Compound Components",
+        "linkTo": "/compound-components"
     }
 ]
