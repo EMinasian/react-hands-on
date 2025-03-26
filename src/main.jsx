@@ -13,6 +13,7 @@ import CustomHooks from "./routes/CustomHooks";
 import HookUseTransition from "./routes/HookUseTransition";
 import CompoundComponents from "./routes/CompoundComponents";
 import ChildrenComponentsDesignPattern from "./routes/ChildrenComponentsDesignPattern";
+import ExposeFunctionalityThroughRef from "./routes/ExposeFunctionalityThroughRef";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
   { path: "/hook-use-transition", element: <HookUseTransition /> },
   { path: "/compound-components", element: <CompoundComponents /> },
   { path: "/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
+  { path: "/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

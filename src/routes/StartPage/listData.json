@@ -53,5 +53,10 @@
         "id": "10",
         "title": "Children Components Design Pattern",
         "linkTo": "/children-components-design-pattern"
+    },
+    {
+        "id": "11",
+        "title": "Expose Functionality Through Reference",
+        "linkTo": "/expose-functionality-through-ref"
     }
 ]
