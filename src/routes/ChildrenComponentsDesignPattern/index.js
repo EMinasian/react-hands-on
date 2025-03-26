@@ -1,0 +1,3 @@
+import ChildrenComponentsDesignPattern from "./ChildrenComponentsDesignPattern";
+
+export default ChildrenComponentsDesignPattern;

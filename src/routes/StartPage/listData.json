@@ -48,5 +48,10 @@
         "id": "9",
         "title": "Compound Components",
         "linkTo": "/compound-components"
+    },
+    {
+        "id": "10",
+        "title": "Children Components Design Pattern",
+        "linkTo": "/children-components-design-pattern"
     }
 ]
