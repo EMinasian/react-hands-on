@@ -15,6 +15,7 @@ import CompoundComponents from "./routes/CompoundComponents";
 import ChildrenComponentsDesignPattern from "./routes/ChildrenComponentsDesignPattern";
 import ExposeFunctionalityThroughRef from "./routes/ExposeFunctionalityThroughRef";
 import BlobDownload from "./routes/BlobDownload";
+import CSSVariables from "./routes/CSSVariables";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage /> },
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
   { path: "/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
   { path: "/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
   { path: "/blob-download", element: <BlobDownload /> },
+  { path: "/css-variables", element: <CSSVariables /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
