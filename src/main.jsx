@@ -4,9 +4,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import StartPage from "./routes/StartPage";
 import UseStateScheduling from "./routes/UseStateScheduling";
 import StateBasedOnPrevState from "./routes/StateBasedOnPrevState";
-import VanillaCSSNotScoping from "./routes/VanillaCSSNotScoping";
-import StylingSolutions from "./routes/StylingSolutions";
-import StyledComponents from "./routes/StyledComponents";
 import UseStateVsUseRef from "./routes/UseRefVsUseState";
 import UseStateInitialRender from "./routes/UseStateInitialRender";
 import CustomHooks from "./routes/CustomHooks";
@@ -15,15 +12,18 @@ import CompoundComponents from "./routes/CompoundComponents";
 import ChildrenComponentsDesignPattern from "./routes/ChildrenComponentsDesignPattern";
 import ExposeFunctionalityThroughRef from "./routes/ExposeFunctionalityThroughRef";
 import BlobDownload from "./routes/BlobDownload";
-import CSSVariables from "./routes/CSSVariables";
+import { Styling, StylingSolutions, VanillaCSSNotScoping, StyledComponents, CSSVariables } from "./routes/Styling";
 
 const router = createBrowserRouter([
-  { path: "/", element: <StartPage /> },
+  { path: "/", element: <StartPage />},
+  { path: "/styling", element: <Styling />},
+  { path: "/styling/vanilla-css-not-scoping", element: <VanillaCSSNotScoping /> },
+  { path: "/styling/styling-solutions", element: <StylingSolutions /> },
+  { path: "/styling/styled-components", element: <StyledComponents /> },
+  { path: "/styling/css-variables", element: <CSSVariables /> },
+
   { path: "/usestate-scheduling", element: <UseStateScheduling /> },
   { path: "/state-update", element: <StateBasedOnPrevState /> },
-  { path: "/vanilla-css-not-scoping", element: <VanillaCSSNotScoping /> },
-  { path: "/styling-solutions", element: <StylingSolutions /> },
-  { path: "/styled-components", element: <StyledComponents /> },
   { path: "/usestate-vs-useref", element: <UseStateVsUseRef /> },
   { path: "/usestate-initial-render", element: <UseStateInitialRender /> },
   { path: "/custom-hooks", element: <CustomHooks /> },
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   { path: "/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
   { path: "/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
   { path: "/blob-download", element: <BlobDownload /> },
-  { path: "/css-variables", element: <CSSVariables /> },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

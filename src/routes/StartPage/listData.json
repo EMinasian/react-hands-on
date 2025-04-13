@@ -1,72 +1,57 @@
 [
+  {
+    "id": "0",
+    "title": "Styling",
+    "linkTo": "/styling"
+  },
     {
-        "id": "0",
+        "id": "1",
         "title": "Scheduling in React useState hook",
         "linkTo": "/usestate-scheduling"
     },
     {
-        "id": "1",
+        "id": "2",
         "title": "Component state value update based on the current state value",
         "linkTo": "/state-update"
     },
     {
-        "id": "2",
-        "title": "Styling with Vanilla CSS not scoping to a module",
-        "linkTo": "/vanilla-css-not-scoping"
-    },
-    {
         "id": "3",
-        "title": "Styling Solutions in React",
-        "linkTo": "/styling-solutions"
-    },
-    {
-        "id": "4",
-        "title": "Styling by styled-components package",
-        "linkTo": "/styled-components"
-    },
-    {
-        "id": "5",
         "title": "Hooks: useState vs. useRef",
         "linkTo": "/usestate-vs-useref"
     },
     {
-        "id": "6",
+        "id": "4",
         "title": "UseState in page renders (initial)",
         "linkTo": "/usestate-initial-render"
     },
     {
-        "id": "7",
+        "id": "5",
         "title": "Custom hooks",
         "linkTo": "/custom-hooks"
     },
     {
-        "id": "8",
+        "id": "6",
         "title": "Hook: useTransition",
         "linkTo": "/hook-use-transition"
     },
     {
-        "id": "9",
+        "id": "7",
         "title": "Compound Components",
         "linkTo": "/compound-components"
     },
     {
-        "id": "10",
+        "id": "8",
         "title": "Children Components Design Pattern",
         "linkTo": "/children-components-design-pattern"
     },
     {
-        "id": "11",
+        "id": "9",
         "title": "Expose Functionality Through Reference",
         "linkTo": "/expose-functionality-through-ref"
     },
     {
-        "id": "12",
+        "id": "10",
         "title": "Blob Download",
         "linkTo": "/blob-download"
-    },
-    {
-        "id": "13",
-        "title": "CSS Variables",
-        "linkTo": "/css-variables"
     }
 ]
