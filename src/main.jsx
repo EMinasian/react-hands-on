@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import StartPage from "./routes/StartPage";
-import BlobDownload from "./routes/BlobDownload";
-import { DesignPatterns, CustomHooks, ChildrenComponentsDesignPattern, CompoundComponents, ExposeFunctionalityThroughRef } from "./routes/DesignPatterns";
-import { Hooks, UseStateScheduling, HookUseTransition, UseStateInitialRender, UseStateVsUseRef, StateBasedOnPrevState } from "./routes/Hooks";
 import { Styling, StylingSolutions, VanillaCSSNotScoping, StyledComponents, CSSVariables } from "./routes/Styling";
+import { Hooks, UseStateScheduling, HookUseTransition, UseStateInitialRender, UseStateVsUseRef, StateBasedOnPrevState } from "./routes/Hooks";
+import { DesignPatterns, CustomHooks, ChildrenComponentsDesignPattern, CompoundComponents, ExposeFunctionalityThroughRef } from "./routes/DesignPatterns";
+import { Other, BlobDownload } from "./routes/Other";
 
 const router = createBrowserRouter([
   { path: "/", element: <StartPage />},
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
   { path: "/design-patterns/compound-components", element: <CompoundComponents /> },
   { path: "/design-patterns/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
   { path: "/design-patterns/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
-
-  { path: "/blob-download", element: <BlobDownload /> },
+  { path: "/other", element: <Other /> },
+  { path: "/other/blob-download", element: <BlobDownload /> },
   
 ]);
 
