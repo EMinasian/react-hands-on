@@ -2,16 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import StartPage from "./routes/StartPage";
-import UseStateScheduling from "./routes/UseStateScheduling";
-import StateBasedOnPrevState from "./routes/StateBasedOnPrevState";
-import UseStateVsUseRef from "./routes/UseRefVsUseState";
-import UseStateInitialRender from "./routes/UseStateInitialRender";
 import CustomHooks from "./routes/CustomHooks";
-import HookUseTransition from "./routes/HookUseTransition";
 import CompoundComponents from "./routes/CompoundComponents";
 import ChildrenComponentsDesignPattern from "./routes/ChildrenComponentsDesignPattern";
 import ExposeFunctionalityThroughRef from "./routes/ExposeFunctionalityThroughRef";
 import BlobDownload from "./routes/BlobDownload";
+import { Hooks, UseStateScheduling, HookUseTransition, UseStateInitialRender, UseStateVsUseRef, StateBasedOnPrevState } from "./routes/Hooks";
 import { Styling, StylingSolutions, VanillaCSSNotScoping, StyledComponents, CSSVariables } from "./routes/Styling";
 
 const router = createBrowserRouter([
@@ -21,13 +17,14 @@ const router = createBrowserRouter([
   { path: "/styling/styling-solutions", element: <StylingSolutions /> },
   { path: "/styling/styled-components", element: <StyledComponents /> },
   { path: "/styling/css-variables", element: <CSSVariables /> },
+  { path: "/hooks", element: <Hooks /> },
+  { path: "/hooks/usestate-scheduling", element: <UseStateScheduling /> },
+  { path: "/hooks/state-update", element: <StateBasedOnPrevState /> },
+  { path: "/hooks/usestate-vs-useref", element: <UseStateVsUseRef /> },
+  { path: "/hooks/usestate-initial-render", element: <UseStateInitialRender /> },
+  { path: "/hooks/hook-use-transition", element: <HookUseTransition /> },
 
-  { path: "/usestate-scheduling", element: <UseStateScheduling /> },
-  { path: "/state-update", element: <StateBasedOnPrevState /> },
-  { path: "/usestate-vs-useref", element: <UseStateVsUseRef /> },
-  { path: "/usestate-initial-render", element: <UseStateInitialRender /> },
   { path: "/custom-hooks", element: <CustomHooks /> },
-  { path: "/hook-use-transition", element: <HookUseTransition /> },
   { path: "/compound-components", element: <CompoundComponents /> },
   { path: "/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
   { path: "/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },

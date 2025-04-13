@@ -1,7 +1,7 @@
 import DisplaySecction from "../../../components/DisplaySection";
 // import UseStateComponent from "./UseStateComponent";
 import UseRefComponent from "./useRefComponent";
-import "../../Globals.css"
+import "../../../Globals.css"
 
 export default function UseStateVsUseRef() {
   return (

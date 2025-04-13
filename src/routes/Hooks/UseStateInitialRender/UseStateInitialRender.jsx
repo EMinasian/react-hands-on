@@ -1,6 +1,6 @@
 import { useState } from "react"
-import DisplaySection from "../../components/DisplaySection"
-import ExplanationSection from "../../components/ExplanationSection"
+import DisplaySection from "../../../components/DisplaySection"
+import ExplanationSection from "../../../components/ExplanationSection"
 import explanation from "./explanation.json"
 
 export default function UseStateInitialRender() {

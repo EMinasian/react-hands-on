@@ -4,35 +4,15 @@
     "title": "Styling",
     "linkTo": "/styling"
   },
-    {
-        "id": "1",
-        "title": "Scheduling in React useState hook",
-        "linkTo": "/usestate-scheduling"
-    },
-    {
-        "id": "2",
-        "title": "Component state value update based on the current state value",
-        "linkTo": "/state-update"
-    },
-    {
-        "id": "3",
-        "title": "Hooks: useState vs. useRef",
-        "linkTo": "/usestate-vs-useref"
-    },
-    {
-        "id": "4",
-        "title": "UseState in page renders (initial)",
-        "linkTo": "/usestate-initial-render"
-    },
+  {
+    "id": "1",
+    "title": "Hooks",
+    "linkTo": "/hooks"
+  },
     {
         "id": "5",
         "title": "Custom hooks",
         "linkTo": "/custom-hooks"
-    },
-    {
-        "id": "6",
-        "title": "Hook: useTransition",
-        "linkTo": "/hook-use-transition"
     },
     {
         "id": "7",

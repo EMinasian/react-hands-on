@@ -1,8 +1,8 @@
 import { useState } from "react";
 import explanation from "./explanation.json";
-import "../../Globals.css";
-import DisplaySection from "../../components/DisplaySection";
-import ExplanationSection from "../../components/ExplanationSection";
+import "../../../Globals.css";
+import DisplaySection from "../../../components/DisplaySection";
+import ExplanationSection from "../../../components/ExplanationSection";
 
 export default function StateBasedOnPrevState() {
   const [count, setCount] = useState(0);
