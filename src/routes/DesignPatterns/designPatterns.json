@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0",
+    "title": "Custom hooks",
+    "linkTo": "/design-patterns/custom-hooks"
+  },
+  {
+    "id": "1",
+    "title": "Compound Components",
+    "linkTo": "/design-patterns/compound-components"
+  },
+  {
+    "id": "2",
+    "title": "Children Components Design Pattern",
+    "linkTo": "/design-patterns/children-components-design-pattern"
+  },
+  {
+    "id": "3",
+    "title": "Expose Functionality Through Reference",
+    "linkTo": "/design-patterns/expose-functionality-through-ref"
+  }
+]

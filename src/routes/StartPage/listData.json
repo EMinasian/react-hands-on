@@ -9,26 +9,11 @@
     "title": "Hooks",
     "linkTo": "/hooks"
   },
-    {
-        "id": "5",
-        "title": "Custom hooks",
-        "linkTo": "/custom-hooks"
-    },
-    {
-        "id": "7",
-        "title": "Compound Components",
-        "linkTo": "/compound-components"
-    },
-    {
-        "id": "8",
-        "title": "Children Components Design Pattern",
-        "linkTo": "/children-components-design-pattern"
-    },
-    {
-        "id": "9",
-        "title": "Expose Functionality Through Reference",
-        "linkTo": "/expose-functionality-through-ref"
-    },
+  {
+    "id": "2",
+    "title": "Design Patterns",
+    "linkTo": "/design-patterns"
+  },
     {
         "id": "10",
         "title": "Blob Download",

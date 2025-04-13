@@ -2,11 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import StartPage from "./routes/StartPage";
-import CustomHooks from "./routes/CustomHooks";
-import CompoundComponents from "./routes/CompoundComponents";
-import ChildrenComponentsDesignPattern from "./routes/ChildrenComponentsDesignPattern";
-import ExposeFunctionalityThroughRef from "./routes/ExposeFunctionalityThroughRef";
 import BlobDownload from "./routes/BlobDownload";
+import { DesignPatterns, CustomHooks, ChildrenComponentsDesignPattern, CompoundComponents, ExposeFunctionalityThroughRef } from "./routes/DesignPatterns";
 import { Hooks, UseStateScheduling, HookUseTransition, UseStateInitialRender, UseStateVsUseRef, StateBasedOnPrevState } from "./routes/Hooks";
 import { Styling, StylingSolutions, VanillaCSSNotScoping, StyledComponents, CSSVariables } from "./routes/Styling";
 
@@ -23,11 +20,12 @@ const router = createBrowserRouter([
   { path: "/hooks/usestate-vs-useref", element: <UseStateVsUseRef /> },
   { path: "/hooks/usestate-initial-render", element: <UseStateInitialRender /> },
   { path: "/hooks/hook-use-transition", element: <HookUseTransition /> },
+  { path: "/design-patterns", element: <DesignPatterns /> },
+  { path: "/design-patterns/custom-hooks", element: <CustomHooks /> },
+  { path: "/design-patterns/compound-components", element: <CompoundComponents /> },
+  { path: "/design-patterns/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
+  { path: "/design-patterns/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
 
-  { path: "/custom-hooks", element: <CustomHooks /> },
-  { path: "/compound-components", element: <CompoundComponents /> },
-  { path: "/children-components-design-pattern", element: <ChildrenComponentsDesignPattern /> },
-  { path: "/expose-functionality-through-ref", element: <ExposeFunctionalityThroughRef /> },
   { path: "/blob-download", element: <BlobDownload /> },
   
 ]);
