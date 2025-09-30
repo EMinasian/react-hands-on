@@ -3,5 +3,10 @@
     "id": "0",
     "title": "Blob Download",
     "linkTo": "/other/blob-download"
+  },
+  {
+    "id": "1",
+    "title": "Re-renders",
+    "linkTo": "/other/re-renders"
   }
 ]
